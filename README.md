@@ -49,8 +49,8 @@ Position: Software Engineer
 
 **Example**:
 ```batch
-Writing ...\Microsoft\Clerk to job-details.txt
-Opening ...\Microsoft\Clerk\cover-letter-resume.odt.
+Writing ...\Microsoft\Software Engineer to job-details.txt
+Opening ...\Microsoft\Software Engineer\cover-letter-resume.odt.
 ```
 
 #### <a name="cleaning-up"></a>Cleaning Up:

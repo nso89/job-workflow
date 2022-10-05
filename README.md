@@ -42,7 +42,7 @@ Position: Software Engineer
 
 4. The script creates 2 folders, with the `Company Name` as the parent, the `Position` as the subfolder. It copies the `cover-letter-resume.odt` to the new folders. 
 ```batch
-...\cover-letter-resume.odt to ...\Microsoft\Software Engineer.
+...\Documents\Work\cover-letter-resume.odt to ...\Documents\Work\Microsoft\Software Engineer.
 ```
 
 5. The path will get written to `job-details.txt`, so that the `run.bat` can open it in our default editor. 

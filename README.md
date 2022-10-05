@@ -37,20 +37,20 @@ C:\Users\nso89\job-workflow>start run.bat
 **Example**:
 ```batch
 Company Name: Microsoft
-Position: Clerk
+Position: Software Engineer
 ```
 
 4. The script creates 2 folders, with the `Company Name` as the parent, the `Position` as the subfolder. It copies the `cover-letter-resume.odt` to the new folders. 
 ```batch
-C:\Users\nso89\Documents\Work\cover-letter-resume.odt to C:\Users\nso89\Documents\Work\Microsoft\Clerk.
+...\cover-letter-resume.odt to ...\Microsoft\Software Engineer.
 ```
 
 5. The path will get written to `job-details.txt`, so that the `run.bat` can open it in our default editor. 
 
 **Example**:
 ```batch
-Writing C:\Users\nso89\Documents\Work\Microsoft\Clerk to job-details.txt
-Opening C:\Users\nso89\Documents\Work\Microsoft\Clerk\cover-letter-resume.odt.
+Writing ...\Microsoft\Clerk to job-details.txt
+Opening ...\Microsoft\Clerk\cover-letter-resume.odt.
 ```
 
 #### <a name="cleaning-up"></a>Cleaning Up:

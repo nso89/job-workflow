@@ -49,7 +49,7 @@ Position: Software Engineer
 
 **Example**:
 ```batch
-Writing ...\Documents\Work\Microsoft\Software Engineer to job-details.txt
+Writing ...\Documents\Work\Microsoft\Software Engineer to job-details.txt.
 Opening ...\Documents\Work\Microsoft\Software Engineer\cover-letter-resume.odt.
 ```
 

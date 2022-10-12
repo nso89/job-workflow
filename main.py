@@ -8,7 +8,7 @@ def read_path_from(file: Path) -> str:
 
 def write_path_to(file_name: Path, odt_file: str) -> None:
       with open(file_name, "w") as f_obj:
-        print(f"Writing {odt_file} to {file_name}")
+        print(f"Writing {odt_file} to {file_name}.")
         f_obj.write(odt_file)
 
 def validate_parameters(validate: str, parameter: str):

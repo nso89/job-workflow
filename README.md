@@ -12,7 +12,7 @@ Automate creating job folders and moving your base cover letter and resume.
 3. A copy of your base cover letter and resume in one file, saved as a `.odt` file in your `Work` folder.
 
 #### <a name="setup"></a>Setup:
-Under your `USERPROFILE` extract `job-workflow.zip`.
+Under your `USERPROFILE`, extract `job-workflow.zip`.
 
 **Example**:
 ```

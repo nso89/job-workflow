@@ -70,3 +70,4 @@ If you need to change the `source` folder:
 cover_letter_resume_odt = Path(os.environ["USERPROFILE"])
 cover_letter_resume_odt = cover_letter_resume_odt.joinpath("Documents\\Work\\cover-letter-resume.odt")
 ```
+3. When you finish changing the variables, save and close the editor.

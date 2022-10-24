@@ -54,7 +54,7 @@ Opening ...\Documents\Work\Microsoft\Software Engineer\cover-letter-resume.odt.
 ```
 
 #### <a name="cleaning-up"></a>Cleaning Up:
-You don't have to delete this file manually, the `run.bat` can do it for you.
+1. You don't have to delete this file manually, the `run.bat` can do it for you.
 
 **Example**:
 ```batch

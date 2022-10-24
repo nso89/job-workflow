@@ -60,3 +60,13 @@ Opening ...\Documents\Work\Microsoft\Software Engineer\cover-letter-resume.odt.
 ```batch
 Removing job-details.txt.
 ```
+#### <a name="configuration"></a>Configuration
+If you need to change the `source` folder:
+1. Open the `main.py` script in any text editor.
+2. Locate the `cover_letter_resume_odt` variable.
+
+**Example**:
+```python
+cover_letter_resume_odt = Path(os.environ["USERPROFILE"])
+cover_letter_resume_odt = cover_letter_resume_odt.joinpath("Documents\\Work\\cover-letter-resume.odt")
+```

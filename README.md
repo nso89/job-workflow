@@ -67,7 +67,6 @@ If you need to change the `source` folder:
 
 **Example**:
 ```python
-cover_letter_resume_odt = Path(os.environ["USERPROFILE"])
-cover_letter_resume_odt = cover_letter_resume_odt.joinpath("")
+cover_letter_resume_odt = Path.home().joinpath("")
 ```
 3. When you finish changing the variables, save and close the editor.

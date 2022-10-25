@@ -1,6 +1,7 @@
 from pathlib import Path
 import os, shutil
 
+
 def read_path_from(file: Path) -> str: 
     with open(file) as f_obj:
         contents = f_obj.read()
@@ -8,7 +9,7 @@ def read_path_from(file: Path) -> str:
 
 def write_path_to(file_name: Path, odt_file: str) -> None:
       with open(file_name, "w") as f_obj:
-        print(f"Writing {odt_file} to {file_name}.")
+        print(f"Writing {odt_file} to {file_name}")
         f_obj.write(odt_file)
 
 def validate_parameters(validate: str, parameter: str):
@@ -18,10 +19,8 @@ def validate_parameters(validate: str, parameter: str):
 def main():
 
     JOB_DETAILS = "job-details.txt"
-
-    cover_letter_resume_odt = Path(os.environ["USERPROFILE"])
-    cover_letter_resume_odt = cover_letter_resume_odt.joinpath("Documents\\Work\\cover-letter-resume.odt")
-
+    cover_letter_resume_odt = Path.home().joinpath("Documents\\Work\\cover-letter-resume.odt")
+    
     try:
         
         company_name = input("Company Name: ")

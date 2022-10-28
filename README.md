@@ -5,6 +5,7 @@ Automate creating job folders and moving your base cover letter and resume.
 * [Setup](#setup)
 * [Running the Script](#running-the-script)
 * [Cleaning Up](#cleaning-up)
+* [Configuration](#configuration)
 
 #### <a name="prerequisites"></a>Prerequisites
 1. A complete install of `Python 3.x`.

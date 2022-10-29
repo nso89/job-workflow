@@ -1,12 +1,6 @@
 from pathlib import Path
 import os, shutil
 
-
-def read_path_from(file: Path) -> str: 
-    with open(file) as f_obj:
-        contents = f_obj.read()
-    return contents
-
 def write_path_to(file_name: Path, odt_file: str) -> None:
       with open(file_name, "w") as f_obj:
         print(f"Writing {odt_file} to {file_name}")
@@ -34,11 +28,11 @@ def main():
 
         company_name_position = Path(company_name.title()).joinpath(position.title())
         destination = Path(cover_letter_resume_odt.parent).joinpath(company_name_position)
-        destination.mkdir(parents=True)
+        destination.mkdir(parents = True)
 
         print(f"Copying {cover_letter_resume_odt} to {destination}.")
-        shutil.copy(cover_letter_resume_odt, destination)
-        write_path_to(JOB_DETAILS,str(destination))
+        shutil.copy(src = cover_letter_resume_odt, dst = destination)
+        write_path_to(file_name = JOB_DETAILS, odt_file = str(destination))
         
     except(ValueError,FileNotFoundError,PermissionError) as e:
         print(e)

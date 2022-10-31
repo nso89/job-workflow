@@ -1,12 +1,33 @@
 from pathlib import Path
-import os, shutil
+import shutil
 
-def write_path_to(file_name: Path, odt_file: str) -> None:
-      with open(file_name, "w") as f_obj:
-        print(f"Writing {odt_file} to {file_name}")
-        f_obj.write(odt_file)
+def write_word_to(file_name: Path, word: str) -> None:
+    """
+    Write a string to a file.
+    
+    Args:
+    file_name: str
+    word : str
+    
+    Returns:
+    None
+    """
+    with open(file_name, "w") as f_obj:
+        print(f"Writing {word} to {file_name}")
+        f_obj.write(word)
 
 def validate_parameters(validate: str, parameter: str):
+    """
+    Verify if validate is blank, if so, raise ValueError 
+    indicating the parameter cannot be blank.
+    
+    Args:
+    validate: str - the string we're checking.
+    parameter: str - what the str represents.
+    
+    Returns:
+    None
+    """
     if not validate:
         raise ValueError(f"{parameter} cannot be blank!")
 
@@ -32,7 +53,7 @@ def main():
 
         print(f"Copying {cover_letter_resume_odt} to {destination}.")
         shutil.copy(src = cover_letter_resume_odt, dst = destination)
-        write_path_to(file_name = JOB_DETAILS, odt_file = str(destination))
+        write_word_to(file_name = JOB_DETAILS, word = str(destination))
         
     except(ValueError,FileNotFoundError,PermissionError) as e:
         print(e)

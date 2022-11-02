@@ -23,7 +23,7 @@ def validate_parameters(validate: str, parameter: str) -> None:
     
     Args:
     validate: str - the string we're checking.
-    parameter: str - what the str represents.
+    parameter: str - what validate represents.
     
     Returns:
     None

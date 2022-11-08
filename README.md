@@ -13,25 +13,25 @@ Automate creating job folders and moving your base cover letter and resume.
 3. A copy of your base cover letter and resume in one file, saved as a `.odt` file in your `Work` folder.
 
 #### <a name="setup"></a>Setup:
-Under your `USERPROFILE`, extract `job-workflow.zip`.
+Under your `USERPROFILE`, extract `job-workflow-main.zip`.
 
 **Example**:
 ```
-C:\Users\nso89\job-workflow\main.py
-C:\Users\nso89\job-workflow\job-app.bat
+C:\Users\nso89\job-workflow-main\main.py
+C:\Users\nso89\job-workflow-main\job-app.bat
 ```
 #### <a name="running-the-script"></a>Running the Script:
-1. Open `cmd.exe` and change the directory to the `job-workflow` folder.
+1. Open `cmd.exe` and change the directory to the `job-workflow-main` folder.
 
 **Example**:
 ```batch
-C:\Users\nso89>cd job-workflow
+C:\Users\nso89>cd job-workflow-main
 ```
 2. Start the `run.bat` script.
 
 **Example**:
 ```batch
-C:\Users\nso89\job-workflow>start run.bat
+C:\Users\nso89\job-workflow-main>start run.bat
 ```
 3. The `run.bat` script starts the `main.py` script, and asks you for the `Company Name` and `Position`.
 
@@ -46,7 +46,7 @@ Position: Software Engineer
 ...\Documents\Work\cover-letter-resume.odt to ...\Documents\Work\Microsoft\Software Engineer.
 ```
 
-5. The path will get written to `job-details.txt`, so that the `run.bat` can open it in our default editor. 
+5. The path will get written to `job-details.txt`, so that the `run.bat` can open it in your default editor. 
 
 **Example**:
 ```batch

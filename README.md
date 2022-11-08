@@ -9,7 +9,7 @@ Automate creating job folders and moving your base cover letter and resume.
 
 #### <a name="prerequisites"></a>Prerequisites
 1. A complete install of `Python 3.x`.
-2. A folder labelled `Work` under your `Documents` folder.
+2. A folder named `Work` under your `Documents` folder.
 3. A copy of your base cover letter and resume in one file, saved as a `.odt` file in your `Work` folder.
 
 #### <a name="setup"></a>Setup:

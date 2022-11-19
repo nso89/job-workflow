@@ -1,6 +1,7 @@
 from pathlib import Path
 import shutil
 
+
 def write_word_to(file_name: Path, word: str) -> None:
     """
     Write a string to a file.
@@ -16,6 +17,7 @@ def write_word_to(file_name: Path, word: str) -> None:
         print(f"Writing {word} to {file_name}")
         f_obj.write(word)
 
+        
 def validate_parameters(validate: str, parameter: str) -> None:
     """
     Verify if validate is blank, if so, raise ValueError 
@@ -31,6 +33,7 @@ def validate_parameters(validate: str, parameter: str) -> None:
     if not validate:
         raise ValueError(f"{parameter} cannot be blank!")
 
+        
 def main():
 
     JOB_DETAILS = "job-details.txt"

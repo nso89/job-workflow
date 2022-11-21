@@ -59,7 +59,7 @@ def main():
         shutil.copy(src = COVER_LETTER_RESUME, dst = destination)
         write_word_to(file_name = JOB_DETAILS, word = str(destination))
         
-    except(ValueError,FileNotFoundError,PermissionError) as e:
+    except(ValueError, FileNotFoundError, FileExistsError, PermissionError) as e:
         print(e)
 
 if __name__ == "__main__":

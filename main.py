@@ -2,6 +2,10 @@ from pathlib import Path
 import shutil
 
 
+JOB_DETAILS = "job-details.txt"
+COVER_LETTER_RESUME = Path.home().joinpath("Documents\\Work\\cover-letter-resume.odt")
+
+
 def write_word_to(file_name: Path, word: str) -> None:
     """
     Write a string to a file.
@@ -35,10 +39,7 @@ def validate_parameters(validate: str, parameter: str) -> None:
 
         
 def main():
-
-    JOB_DETAILS = "job-details.txt"
-    cover_letter_resume_odt = Path.home().joinpath("Documents\\Work\\cover-letter-resume.odt")
-    
+   
     try:
         
         company_name = input("Company Name: ")
@@ -51,11 +52,11 @@ def main():
         validate_parameters(position, "Position")
 
         company_name_position = Path(company_name.title()).joinpath(position.title())
-        destination = Path(cover_letter_resume_odt.parent).joinpath(company_name_position)
+        destination = Path(COVER_LETTER_RESUME.parent).joinpath(company_name_position)
         destination.mkdir(parents = True)
 
-        print(f"Copying {cover_letter_resume_odt} to {destination}.")
-        shutil.copy(src = cover_letter_resume_odt, dst = destination)
+        print(f"Copying {COVER_LETTER_RESUME} to {destination}.")
+        shutil.copy(src = COVER_LETTER_RESUME, dst = destination)
         write_word_to(file_name = JOB_DETAILS, word = str(destination))
         
     except(ValueError,FileNotFoundError,PermissionError) as e:

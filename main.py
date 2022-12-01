@@ -42,11 +42,8 @@ def main():
    
     try:
         
-        company_name = input("Company Name: ")
-        position = input("Position: ")
-
-        company_name = company_name.strip()
-        position = position.strip()
+        company_name = input("Company Name: ").strip()
+        position = input("Position: ").strip()
 
         validate_parameters(company_name, "Company Name")
         validate_parameters(position, "Position")

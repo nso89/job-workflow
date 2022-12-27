@@ -36,6 +36,8 @@ def validate_parameters(validate: str, parameter: str) -> None:
     """
     if not validate:
         raise ValueError(f"{parameter} cannot be blank!")
+    if validate.startswith(" ") or validate.endswith(" "):
+        raise ValueError(f"{parameter} cannot be blank!")
 
         
 def main():

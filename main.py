@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil, os
 
 
-COVER_LETTER_RESUME = Path.home().joinpath(r'Documents\Work\main.tex')
+COVER_LETTER_RESUME = Path.home().joinpath(r"Documents\Work\main.tex")
 
 
 def verify(parameter: str, name: str) -> None:

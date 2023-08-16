@@ -2,19 +2,15 @@ from pathlib import Path
 import shutil, os
 
 
-COVER_LETTER_RESUME = Path.home().joinpath("Documents\\Work\\cover-letter-resume.odt")
+COVER_LETTER_RESUME = Path.home().joinpath(r'Documents\Work\main.tex')
 
 
 def verify(parameter: str, name: str) -> None:
     """
     Verify if parameter is blank, if so, raise ValueError.
     """
-    error_message : str = f"{name} cannot be blank!"
-
     if not parameter or parameter.isspace():
-        raise ValueError(error_message)
-    if parameter == '""' or parameter == '" "':
-        raise ValueError(error_message)
+        raise ValueError(f"{name} cannot be blank!")
     if parameter.startswith(" ") or parameter.endswith(" "):
         raise ValueError(f"{name} cannot begin or end with an empty space!")
 
@@ -33,7 +29,7 @@ def main():
         job_file_location.mkdir(parents = True, exist_ok =  False)
        
         print(f"Copying {COVER_LETTER_RESUME} -> {job_file_location}")
-        os.startfile(shutil.copy(src = COVER_LETTER_RESUME, dst = job_file_location))
+        shutil.copy(src = COVER_LETTER_RESUME, dst = job_file_location)
     
     except(FileExistsError, FileNotFoundError, OSError, ValueError) as e:
         print(e)

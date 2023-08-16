@@ -9,8 +9,12 @@ def verify(parameter: str, name: str) -> None:
     """
     Verify if parameter is blank, if so, raise ValueError.
     """
-    if not parameter or parameter == '""' or parameter == '" "':
-        raise ValueError(f"{name} cannot be blank!")
+    error_message : str = f"{name} cannot be blank!"
+
+    if not parameter or parameter.isspace():
+        raise ValueError(error_message)
+    if parameter == '""' or parameter == '" "':
+        raise ValueError(error_message)
     if parameter.startswith(" ") or parameter.endswith(" "):
         raise ValueError(f"{name} cannot begin or end with an empty space!")
 

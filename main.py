@@ -35,7 +35,7 @@ def main():
         print(f"Copying {COVER_LETTER_RESUME} -> {job_file_location}")
         os.startfile(shutil.copy(src = COVER_LETTER_RESUME, dst = job_file_location))
     
-    except(FileExistsError, FileNotFoundError, ValueError) as e:
+    except(FileExistsError, FileNotFoundError, OSError, ValueError) as e:
         print(e)
 
 if __name__ == '__main__':

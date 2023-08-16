@@ -7,13 +7,12 @@ COVER_LETTER_RESUME = Path.home().joinpath("Documents\\Work\\cover-letter-resume
 
 def verify(parameter: str, name: str) -> None:
     """
-    Check the parameter to make sure it isn't empty or that
-    it doesn't start or end with an empty space.
+    Verify if parameter is blank, if so, raise ValueError.
     """
-    if parameter == "":
-        raise ValueError(f"{name} cannot be empty!")
+    if not parameter or parameter == '""' or parameter == '" "':
+        raise ValueError(f"{name} cannot be blank!")
     if parameter.startswith(" ") or parameter.endswith(" "):
-        raise ValueError(f"{name} cannot start or end with an empty space!")
+        raise ValueError(f"{name} cannot begin or end with an empty space!")
 
     
 def main():

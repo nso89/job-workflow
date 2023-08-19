@@ -55,7 +55,6 @@ If you need to change the `cover_letter_resume_odt` folder:
 
 1. Open the `main.py` script in any text editor.
 2. Locate the `cover_letter_resume_odt` variable.
-
 **Example**:
 ```python
 cover_letter_resume_odt = Path.home().joinpath("Documents\\Work\\cover-letter-resume.odt")

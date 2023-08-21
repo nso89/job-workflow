@@ -9,7 +9,7 @@ Automate creating job folders and moving your base cover letter and resume.
 #### <a name="prerequisites"></a>Prerequisites
 * A complete install of `Python 3.x`.
 * Under `Documents`, a folder named `Work`.
-* Under `Work`, a copy of your base cover letter and resume in one file (`cover-letter-resume.odt`).
+* Under `Work`, a copy of your base cover letter and resume in one file (`main.tex`).
 
 #### <a name="setup"></a>Setup
 1. Under your `USERPROFILE`, extract `job-workflow-main.zip`.
@@ -43,20 +43,21 @@ Company Name: Microsoft
 Position: Software Engineer
 ```
 
-4. The script creates 2 folders, the `Company Name` as the parent and the `Position` as the subfolder. It copies the `cover-letter-resume.odt` to the new folders.
+4. The script creates 2 folders, the `Company Name` as the parent and the `Position` as the subfolder. It copies the `main.tex` to the new folders.
 
 **Example**:
 ```batch
-Copying ...\Documents\Work\cover-letter-resume.odt to ...\Documents\Work\Microsoft\Software Engineer
+Copying ...\Documents\Work\main.tex to ...\Documents\Work\Microsoft\Software Engineer
 ```
 
 #### <a name="configuration"></a>Configuration
-If you need to change the `cover_letter_resume_odt` folder:
+If you need to change the `COVER_LETTER_RESUME` folder:
 
 1. Open the `main.py` script in any text editor.
-2. Locate the `cover_letter_resume_odt` variable.
+2. Locate the `COVER_LETTER_RESUME` variable.
+
 **Example**:
 ```python
-cover_letter_resume_odt = Path.home().joinpath("Documents\\Work\\cover-letter-resume.odt")
+COVER_LETTER_RESUME = Path.home().joinpath(r"Documents\Work\main.tex")
 ```
 3. When you finish changing the variables, save and close the editor.

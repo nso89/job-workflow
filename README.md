@@ -16,7 +16,7 @@ Automate creating job folders and moving your base cover letter and resume.
 
 **Example**:
 ```batch
-C:\Users\nso89\job-workflow-main\main.py
+C:\Users\nso89\job-workflow-main
 ```
 
 #### <a name="running-the-script"></a>Running the Script
